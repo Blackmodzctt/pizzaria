@@ -1,0 +1,146 @@
+@import url('https://fonts.cdnfonts.com/css/maharlika');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Sancreek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+
+body {
+    background-color: #d18719;
+    font-family: "Arimo", sans-serif;
+    
+}
+
+.titul {
+    text-align: center;
+    font-family: 'Maharlika', sans-serif;
+    font-weight: normal;
+    font-size: 52px;
+    
+}
+
+.subtit {
+    margin-top: 10px;
+}
+
+a {
+    color: white;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.naveg {
+    text-align: center;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 21px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.pizz {
+    margin-top: 30px;
+    margin-left: 160px;
+    height: 500px;
+    width: 500px; 
+}
+
+.blocobranco {
+    font-family: "Arimo", sans-serif;
+    background-color: white;
+    margin-left: 470px;
+    margin-top: -500px;
+    height: 480px;
+    width: 800px;
+    
+}
+
+.slogan { 
+    margin-left: 60px;
+    padding: 140px;
+    font-size: 21px;
+    width: 500px;
+}
+
+.botaopedir{
+    background-color: #d18719;
+    margin-left: 580px;
+    border-radius: 5px;
+    height: 90px;
+    width: 200px;
+    margin-top: -100px;
+    color: white;
+    border-color: #d18719;
+}
+
+.botaopedir:hover {
+    background-color: #a8701d;
+}
+
+.sobrenos {
+    margin-top: 250px;
+    background-color: white;
+    width: 100%;
+    padding: 4px;
+}
+
+
+.pizzaiolo {
+    width: 500px;
+    height: 600px;
+    border-radius: 6px;
+    margin-left: 5%;
+    padding: 100px;
+}
+
+.carda {
+    font-size: 22px;
+}
+
+.texto {
+    width: 500px;
+    margin-left: 30%;
+    margin-top: -600px;
+    height: 630px;
+}
+
+.subsobre {
+    font-size: 32px;
+    margin-left: 300px;
+}
+
+.textonos {
+    margin-left: 299px;
+    font-size: 22px;
+    width: 500px;
+}
+
+.pizzas {
+    margin-top: 100px;
+    background-color: #EFCD8F;
+    display: flex;
+    gap: 1px;
+    width: 100%;
+    padding: 4px;
+}
+
+.pizzass {
+    width: 400px;
+    padding: 19px;
+    margin-top: 80px;
+}
+
+.tipos {
+    text-align: center;
+    width: 100;
+}
+
+
