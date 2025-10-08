@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio</title>
+
+    <link rel="stylesheet" href="./cardapio.css">
 </head>
 <body>
-    <h1>Cardápio</h1>
+    <header>
+        <p id="logo">Amassa que é boa</p>
+        <p id="header_descricao">A pizza que você sempre pede!</p>
+
+        <nav>
+            <a href="#">Sobre nós</a>
+            <a href="#">Login</a>
+            <a href="#">Delivery</a>
+            <a href="#">Cardápio</a>
+            <a href="#">Contato</a>
+            <a href="#">Reserva</a>
+            <a href="#">Meus pedidos</a>
+            <a href="#">Avaliações</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Entrar na sua conta</h1>
+            <form action="#">
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <p>Não tem uma conta? <a href="#">Criar conta</a></p>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <img src="imgs/pizaz.png" alt="Logo">
+
+    </main>
 </body>
 </html>
