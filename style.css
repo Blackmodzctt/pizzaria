@@ -2,33 +2,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Sancreek&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 
+* {
+    margin: 0%;
+    padding: 0%;
+}
 
-
-
+/*cor de fundo*/
 body {
     background-color: #d18719;
     font-family: "Arimo", sans-serif;
     
 }
 
+/*configurações do titulo*/
 .titul {
     text-align: center;
     font-family: 'Maharlika', sans-serif;
     font-weight: normal;
     font-size: 52px;
-    
 }
 
+/*configuração do sub titulo*/
 .subtit {
     margin-top: 10px;
 }
 
+/*alterações dos anchor*/
 a {
     color: white;
     text-align: center;
     margin-right: 12px;
 }
 
+/*personalização do menu de navegação*/
 .naveg {
     text-align: center;
     font-family: "Arimo", sans-serif;
@@ -38,14 +44,17 @@ a {
     font-size: 21px;
 }
 
+/*tirei a sublinha do anchor*/
 a {
     text-decoration: none;
 }
 
+/*coloquei uma cor preta no hover do anchor*/
 a:hover {
     color: rgb(0, 0, 0);
 }
 
+/*configurações da imagem de pizza do início*/
 .pizz {
     margin-top: 30px;
     margin-left: 160px;
@@ -53,6 +62,7 @@ a:hover {
     width: 500px; 
 }
 
+/*bloco branco em baixo da pizza*/
 .blocobranco {
     font-family: "Arimo", sans-serif;
     background-color: white;
@@ -60,9 +70,9 @@ a:hover {
     margin-top: -500px;
     height: 480px;
     width: 800px;
-    
 }
 
+/*configuração de tamanho do slogan*/
 .slogan { 
     margin-left: 60px;
     padding: 140px;
@@ -70,6 +80,7 @@ a:hover {
     width: 500px;
 }
 
+/*personalização do botão de pedir*/
 .botaopedir{
     background-color: #d18719;
     margin-left: 580px;
@@ -81,10 +92,12 @@ a:hover {
     border-color: #d18719;
 }
 
+/*animação do hover*/
 .botaopedir:hover {
     background-color: #a8701d;
 }
 
+/*personalização do sobre nós*/
 .sobrenos {
     margin-top: 250px;
     background-color: white;
@@ -92,19 +105,19 @@ a:hover {
     padding: 4px;
 }
 
-
+/*imagem do pizzaiolo que fica do lado do sobre nós */
 .pizzaiolo {
     width: 500px;
     height: 600px;
     border-radius: 6px;
     margin-left: 5%;
     padding: 100px;
+    border-radius: 10px;
 }
 
-.carda {
-    font-size: 22px;
-}
 
+
+/*personalização de tamanho do texto e margem sobre nós*/
 .texto {
     width: 500px;
     margin-left: 30%;
@@ -112,35 +125,56 @@ a:hover {
     height: 630px;
 }
 
+/*personalização do título sobre nós*/
 .subsobre {
     font-size: 32px;
     margin-left: 300px;
 }
 
+/*personalização do texto sobre nós*/
 .textonos {
     margin-left: 299px;
     font-size: 22px;
     width: 500px;
 }
 
+/*Alterei o tamanho do título cardápio*/
+.carda {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+/*personalização do bloco de pizzas do site*/
 .pizzas {
     margin-top: 100px;
     background-color: #EFCD8F;
     display: flex;
-    gap: 1px;
+    gap: 30px;
     width: 100%;
     padding: 4px;
 }
 
-.pizzass {
-    width: 400px;
-    padding: 19px;
-    margin-top: 80px;
-}
-
+/*texto dos tipos de pizza*/
 .tipos {
-    text-align: center;
-    width: 100;
+    width: 100%;
+    display: flex;
+}   
+
+/*alteração de tamanho da pizza de mussarela*/
+.imagens-pizza {
+    width: 300px;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
 }
 
+.mini-pizza {
+    width: 100%;
+    height: 100%;
+}
 
+/*bloco da pizza doce*/
+.pizza-doce {
+    width: 100%;
+    height: 100%;
+}
