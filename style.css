@@ -179,7 +179,7 @@ a:hover {
     margin-top: 200px;
     width: 100%;
     font-size: 30px;
-    margin-left: -100px;
+    margin-left: -130px;
     justify-content: center;
     margin-right: 80px;
 
@@ -188,6 +188,7 @@ a:hover {
 /*fundo da seção de localização*/
 .ct_local {
     background-color: white;
+    padding: 20px;
 }
 
 /*imagem das logos*/
@@ -297,7 +298,7 @@ footer {
 }
 
 #footer-logo {
-    width: 150px;
+    width: 180px;
 }
 
 #nextoria {
