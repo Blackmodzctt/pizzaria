@@ -150,16 +150,16 @@ a:hover {
 .categoria {
     width: 100%;  
     display: flex;
-    cursor: pointer;
     background-color: #EFCD8F;
     height: 680px;
 }
 
+/*Bloco dos tipos de pizza*/
 .pizzas {
     width: 350px;
     height: 300px;
     margin-top: 300px;
-    margin-left: -200px;
+    margin-left: -300px;
     margin-right: 100px;
     border-radius: 10px;
     justify-content: center;
@@ -172,6 +172,7 @@ a:hover {
     transform: scale(1.05);
 }
 
+/*Texto dos tipos de pizza*/
 .tipos {
     position: relative;
     margin-top: 200px;
@@ -182,11 +183,13 @@ a:hover {
     margin-right: 80px;
 
 }
+
 /*fundo da seção de localização*/
 .ct_local {
     background-color: white;
 }
 
+/*imagem das logos*/
 .logos {
     display: flex;
     flex-direction: column;
@@ -227,6 +230,7 @@ tr.destaque {
   background-color: #f1ca84;
 }
 
+/*imagem do google maps*/
 .localização {
     margin-left: 600px;
     margin-top: -700px;
@@ -245,6 +249,7 @@ tr.destaque {
     height: 100px;
 }
 
+/*Imagem dos clientes*/
 .img-pessoa {
     width: 50px;
     border-radius: 60px;
@@ -252,6 +257,7 @@ tr.destaque {
     margin-right: 10px;
 }
 
+/*Caixa que contém as pessoas*/
 .container-pessoa {
     display: flex;
     flex-wrap: wrap;  
@@ -260,6 +266,7 @@ tr.destaque {
     padding: 20px;
 }
 
+/*Roda Pé*/
 footer {
     background-color: #efcd8f;
     padding: 1.5rem;
