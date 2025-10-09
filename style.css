@@ -52,6 +52,7 @@ a {
 /*coloquei uma cor preta no hover do anchor*/
 a:hover {
     color: rgb(0, 0, 0);
+    text-decoration: underline;
 }
 
 /*configurações da imagem de pizza do início*/
@@ -142,39 +143,156 @@ a:hover {
 .carda {
     font-size: 42px;
     margin-bottom: 20px;
+    margin-left: 50px;
+    margin: 50px;
 }
 
-/*personalização do bloco de pizzas do site*/
-.pizzas {
-    margin-top: 100px;
+.categoria {
+    width: 100%;  
+    display: flex;
+    cursor: pointer;
     background-color: #EFCD8F;
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    padding: 4px;
+    height: 680px;
 }
 
-/*texto dos tipos de pizza*/
-.tipos {
-    width: 100%;
-    display: flex;
-}   
-
-/*alteração de tamanho da pizza de mussarela*/
-.imagens-pizza {
-    width: 300px;
-    border-radius: 10px;
+.pizzas {
+    width: 350px;
     height: 300px;
+    margin-top: 300px;
+    margin-left: -200px;
+    margin-right: 100px;
+    border-radius: 10px;
+    justify-content: center;
+    transition: 0.3s ease;
+    gap: 10px;
+}
+
+/* Efeito hover */
+.categoria img:hover {
+    transform: scale(1.05);
+}
+
+.tipos {
+    position: relative;
+    margin-top: 200px;
+    width: 100%;
+    font-size: 30px;
+    margin-left: -100px;
+    justify-content: center;
+    margin-right: 80px;
+
+}
+/*fundo da seção de localização*/
+.ct_local {
+    background-color: white;
+}
+
+.logos {
     display: flex;
+    flex-direction: column;
+    height: 30px;
 }
 
-.mini-pizza {
-    width: 100%;
-    height: 100%;
+/* Container da tabela */
+.tabela-container {
+  background-color: #ffffff;
+  padding: 20px;
 }
 
-/*bloco da pizza doce*/
-.pizza-doce {
-    width: 100%;
-    height: 100%;
+/* Estilo da tabela */
+table {
+  border-collapse: collapse;
+  width: 320px;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Cabeçalho */
+thead th {
+  background-color: #c67b0c;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+/* Linhas comuns */
+tbody td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+/* Linhas destacadas (amarelo mais escuro) */
+tr.destaque {
+  background-color: #f1ca84;
+}
+
+.localização {
+    margin-left: 600px;
+    margin-top: -700px;
+    width: 600px;
+    height: 500px;
+}
+
+/*caixa dos usuários*/
+.pessoa {
+    background-color: white;
+    border: none;
+    display: flex;
+    width: 360px;
+     border-radius: 10px;
+    align-items: center;
+    height: 100px;
+}
+
+.img-pessoa {
+    width: 50px;
+    border-radius: 60px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.container-pessoa {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center; 
+    gap: 20px;               
+    padding: 20px;
+}
+
+footer {
+    background-color: #efcd8f;
+    padding: 1.5rem;
+    
+}
+
+#footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navegacao_secundaria {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    width: 300px;   
+}
+
+.link-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.link-coluna a {
+    color: black;
+}
+
+#footer-logo {
+    width: 150px;
+}
+
+#nextoria {
+    margin-top: 1rem;
+    text-align: center;
 }
