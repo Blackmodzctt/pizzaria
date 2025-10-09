@@ -12,7 +12,7 @@
         <p id="logo">Amassa que é boa</p>
         <p id="header_descricao">A pizza que você sempre pede!</p>
 
-        <nav>
+        <nav id="navegacao_primaria">
             <a href="#">Sobre nós</a>
             <a href="#">Login</a>
             <a href="#">Delivery</a>
@@ -24,27 +24,103 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Entrar na sua conta</h1>
-            <form action="#">
-                <div class="input-box">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+        <h1>Cardápio</h1>
+
+        <section id="pizzas-salgadas">
+            <h2>Pizzas salgadas</h2>
+
+            <div class="pizzas-linha">
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_calabresa.png" alt="Imagem da pizza de calabresa">
+                    <h3>Calabresa</h3>
+                    <p class="pizza-descricao">Fatias de calabresa fatiada, cebolas rosas, queijo muçarela, orégano e azeitonas.</p>
                 </div>
-
-                <div class="input-box">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" id="password">
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_portuguesa.png" alt="Imagem da pizza de calabresa">
+                    <h3>Portuguesa</h3>
+                    <p class="pizza-descricao">Presunto, ovos, cebola, pimentão, ervilhas, queijo muçarela e azeitonas.</p>
                 </div>
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_catupiry.png" alt="Imagem da pizza de calabresa">
+                    <h3>Frango com catupiry</h3>
+                    <p class="pizza-descricao">Frango desfiado e catupiry cremoso.</p>
+                </div>
+            </div>
 
-                <p>Não tem uma conta? <a href="#">Criar conta</a></p>
-
-                <button type="submit">Entrar</button>
-            </form>
+            <div class="pizzas-linha">
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_margherita.png" alt="Imagem da pizza de calabresa">
+                    <h3>Margherita</h3>
+                    <p class="pizza-descricao">Queijo muçarela, tomate fatiado e folhas de manjericão.</p>
+                </div>
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_mucarela.png" alt="Imagem da pizza de calabresa">
+                    <h3>Muçarela</h3>
+                    <p class="pizza-descricao">Pizza clássica coberta com molho de tomate e muito queijo muçarela derretido.</p>
+                </div>
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_pepperoni.png" alt="Imagem da pizza de calabresa">
+                    <h3>Pepperoni</h3>
+                    <p class="pizza-descricao">Queijo muçarela e fatias de pepperoni.</p>
+                </div>
+            </div>
         </section>
 
-        <img src="imgs/pizaz.png" alt="Logo">
+        <section id="pizzas-doces">
+            <h2>Pizzas doces</h2>
 
+            <div class="pizzas-linha">
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_doce_goiabada.png" alt="Imagem da pizza de calabresa">
+                    <h3>Goiabada com Catupiry</h3>
+                </div>
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_doce_mm.png" alt="Imagem da pizza de calabresa" style="object-position: top;">
+                    <h3>M&M's</h3>
+                    <p class="pizza-descricao">Ganache de chocolate, raspas de chocolate e cobertura de M&M's.</p>
+                </div>
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_doce_nutella.png" alt="Imagem da pizza de calabresa">
+                    <h3>Nutella com Chocolate Branco</h3>
+                    <p class="pizza-descricao">Nutella, chocolate branco e castanhas.</p>
+                </div>
+            </div>
+
+            <div class="pizzas-linha">
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_doce_ovomaltine.png" alt="Imagem da pizza de calabresa">
+                    <h3>Chocolate com Ovomaltine</h3>
+                    <p class="pizza-descricao">Ganache de chocolate com cobertura de Ovomaltine.</p>
+                </div>
+                <div class="pizza-container">
+                    <img src="imgs/cardapio/pizza_doce_sensacao.png" alt="Imagem da pizza de calabresa">
+                    <h3>Sensação</h3>
+                    <p class="pizza-descricao">Ganache de chocolate e fatias de morango.</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div id="footer-box">
+            <nav id="navegacao_secundaria">
+                <div class="link-coluna">
+                    <a href="#">Sobre nós</a>
+                    <a href="#">Login</a>
+                    <a href="#">Delivery</a>
+                </div>
+                <div class="link-coluna">
+                    <a href="#">Cardápio</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Reserva</a>
+                </div>
+                <div class="link-coluna">
+                    <a href="#">Meus pedidos</a>
+                    <a href="#">Avaliações</a>
+                </div>
+            </nav>
+            <img src="imgs/tela-inicial/pizaz.png" alt="Logo" id="footer-logo">
+        </div>
+        <p id="nextoria">© 2025 - Desenvolvido por <strong>Nextoria</strong></p>
+    </footer>
 </body>
 </html>
