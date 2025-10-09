@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+
+    <link rel="stylesheet" href="./cadastro.css">
+    <link rel="shortcut icon" href="./imgs/tela-inicial/pizza_ico.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <p id="logo">Amassa que é boa</p>
+        <p id="header_descricao">A pizza que você sempre pede!</p>
+
+        <nav id="navegacao_primaria">
+            <a href="#">Sobre nós</a>
+            <a href="#">Login</a>
+            <a href="#">Delivery</a>
+            <a href="#">Cardápio</a>
+            <a href="#">Contato</a>
+            <a href="#">Reserva</a>
+            <a href="#">Meus pedidos</a>
+            <a href="#">Avaliações</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Criar conta</h1>
+            <form action="#">
+                <div id="form-container">
+                    <article id="dados-basicos">
+                        <h3>Dados básicos</h3>
+                    
+                        <div class="input-box">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo">
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Digite o seu melhor email">
+                        </div>
+                        <div class="input-box">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" placeholder="Crie uma senha para sua conta">
+                        </div>
+                    </article>
+                    <article id="contato-localizacao">
+                        <h3>Contato e localização</h3>
+                    
+                        <div id="endereco-container">
+                            <div class="input-box">
+                                <label for="cep">CEP</label>
+                                <input type="text" name="cep" id="cep" placeholder="Digite o seu CEP">
+                            </div>
+                            <div class="input-box">
+                                <label for="numero">Número</label>
+                                <input type="text" name="numero" id="numero" placeholder="Digite o número">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" name="bairro" id="bairro" placeholder="Digite o nome do seu bairro">
+                        </div>
+                        <div class="input-box">
+                            <label for="rua">Rua</label>
+                            <input type="text" name="rua" id="rua" placeholder="Digite o nome da sua rua">
+                        </div>
+                        <div class="input-box">
+                            <label for="estado">Estado</label>
+                            <select id="estados-brasil" name="estado">
+                                <optgroup label="Região Sudeste">
+                                <option value="ES">Espírito Santo</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                                </optgroup>
+                                <optgroup label="Região Sul">
+                                    <option value="PR">Paraná</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="SC">Santa Catarina</option>
+                                </optgroup>
+                                <optgroup label="Região Nordeste">
+                                    <option value="AL">Alagoas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="SE">Sergipe</option>
+                                </optgroup>
+                                <optgroup label="Região Centro-Oeste">
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                </optgroup>
+                                <optgroup label="Região Norte">
+                                    <option value="AC">Acre</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="TO">Tocantins</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da sua cidade">
+                        </div>
+                    </article>
+                </div>
+                
+                <button type="submit" id="botao-cadastrar">Criar conta</button>
+            </form>
+
+            <p id="ja-tenho-conta-texto">Já tem uma conta? <a href="entrar-na-conta.html">Entrar</a></p>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-box">
+            <nav id="navegacao_secundaria">
+                <div class="link-coluna">
+                    <a href="#">Sobre nós</a>
+                    <a href="#">Login</a>
+                    <a href="#">Delivery</a>
+                </div>
+                <div class="link-coluna">
+                    <a href="#">Cardápio</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Reserva</a>
+                </div>
+                <div class="link-coluna">
+                    <a href="#">Meus pedidos</a>
+                    <a href="#">Avaliações</a>
+                </div>
+            </nav>
+            <img src="imgs/tela-inicial/pizaz.png" alt="Logo" id="footer-logo">
+        </div>
+        <p id="nextoria">© 2025 - Desenvolvido por <strong>Nextoria</strong></p>
+    </footer>
+</body>
+</html>
