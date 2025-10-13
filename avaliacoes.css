@@ -1,0 +1,151 @@
+@import url('https://fonts.cdnfonts.com/css/maharlika');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Sancreek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+}
+
+/* ---- HEADER ---- */
+
+header {
+    background-color: #d18719;
+    height: 150px;
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logo {
+    font-size: 3rem;
+    font-weight: 1rem;
+    font-family: 'Maharlika', sans-serif;
+    text-align: center;
+}
+
+#header_descricao {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+nav#navegacao_primaria {
+    display: flex;
+    justify-content: center;
+    gap: 2.5%;
+}
+
+nav#navegacao_primaria a {
+    color: white;
+}
+
+/* ---- MAIN ---- */
+main {
+    padding: 1.5rem;
+		background-color: #f9f9f9;
+}
+
+/* NOTAS */
+
+#notas {
+	padding: 1.5rem;
+	margin-top: 2rem;
+	border-radius: 7px;
+	background-color: white;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.media-avaliacoes-pontuacao {
+	text-align: center;
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.media-avaliacoes-texto {
+	margin-block: 1rem;
+	text-align: center;
+	color: #343434;
+}
+
+h3 {
+	color: #343434;
+	font-size: 1.75rem;
+	margin-top: 1rem;
+}
+
+.nota {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-block: .5rem;
+}
+
+.nota-ranking {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.estrela {
+	width: 20px;
+	height: 20px;
+	color: red;
+}
+
+progress {
+  border-radius: 7px; 
+  width: 100%;
+}
+progress::-webkit-progress-bar {
+  border-radius: 7px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #d18719;
+  border-radius: 7px;
+}
+
+/* ---- FOOTER ---- */
+footer {
+    background-color: #efcd8f;
+    padding: 1.5rem;
+    
+}
+
+#footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navegacao_secundaria {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    /* width: 300px; */
+}
+
+.link-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.link-coluna a {
+    color: black;
+}
+
+#footer-logo {
+    width: 150px;
+}
+
+#nextoria {
+    margin-top: 1rem;
+    text-align: center;
+}
