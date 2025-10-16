@@ -42,6 +42,7 @@
 /*============CONFIGURAÇÕES DA TABELA============*/
 
 .subsub {
+    margin-top: 40px;
     margin-left: 23%;
 }
 
@@ -89,7 +90,7 @@ tbody td {
   }
 
   .img {
-    margin-left: 24%;
+    margin-left: 23%;
   }
 
   .cep {
