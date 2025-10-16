@@ -1,20 +1,21 @@
-/*cor de fundo*/
+/* cor de fundo */
 body {
     background-color: #d18719;
 }
 
+/*
 /*configurações do titulo*/
-.titul {
+/* .titul {
     text-align: center;
     font-family: 'Maharlika', sans-serif;
     font-weight: normal;
     font-size: 52px;
-}
+} */
 
 /*configuração do sub titulo*/
-.subtit {
+/* .subtit {
     margin-top: 10px;
-}
+} */
 
 /*alterações dos anchor*/
 a {
@@ -43,11 +44,13 @@ a:hover {
     text-decoration: underline;
 }
 
+
 #inicial {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding-bottom: 150px;
+	background-color: #d18719;
 }
 
 /*configurações da imagem de pizza do início*/

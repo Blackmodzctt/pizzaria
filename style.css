@@ -56,7 +56,7 @@ nav#navegacao_primaria a:hover {
 footer {
     background-color: #efcd8f;
     padding: 1.5rem;
-    
+    margin-top: 32px;
 }
 
 #footer-box {
