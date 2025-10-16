@@ -6,103 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tela-inicial.css">
     <link rel="shortcut icon" href="./imgs/tela-inicial/pizza_ico.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header class="titul">
-        <p class="titulo">Amassa que é boa</p>
-        <p class="subtit">A pizza que você sempre pede!</p>
+		<header>
+			<p id="logo">Amassa que é boa</p>
+			<p id="header_descricao">A pizza que você sempre pede!</p>
+
+			<nav id="navegacao_primaria">
+					<a href="#">Sobre nós</a>
+					<a href="#">Login</a>
+					<a href="#">Delivery</a>
+					<a href="#">Cardápio</a>
+					<a href="#">Contato</a>
+					<a href="">Avaliações</a>
+			</nav>
     </header>
-    <nav class="naveg">
-        <a href="#sobrea">Sobre nós </a>
-        <a href="./entrar-na-conta.html" target="_blank">Login </a>
-        <a href="#">Delivery </a>
-        <a href="#cat">Cardápio </a>
-        <a href="#conato">Contato </a>
-        <a href="./local.html" target="_blank">Reserva</a>
-        <a href="#">Meus pedidos </a>
-        <a href="#avaliacao">Avaliações </a>
-    </nav>
     <main>
-        <section>
-            <article>
-                <img class="pizz" src="./imgs/tela-inicial/pizaz.png" alt="Imagem de uma pizza">
-                <div class="blocobranco">
-
-                    <p class="slogan">Amassa Que É Boa – Aqui a massa é leve, o sabor é pesado! Cada fatia é um abraço
-                        quentinho, feito com
-                        carinho, forno quente e aquela receita que ninguém supera. Vem provar o que é pizza de verdade!
-                    </p>
-                    <a href="#">
-                        <button class="botaopedir">
-                            <h1>Pedir pizza</h1>
-                        </button>
-                    </a>
-                </div>
-            </article>
+        <section id="inicial">
+			<div class="blocobranco">
+				<img class="pizz" src="./imgs/tela-inicial/pizaz.png" alt="Imagem de uma pizza">
+				<div id="cabecalho-informacao">
+						<p class="slogan">Amassa Que É Boa – Aqui a massa é leve, o sabor é pesado! Cada fatia é um abraço
+								quentinho, feito com
+								carinho, forno quente e aquela receita que ninguém supera. Vem provar o que é pizza de verdade!
+						</p>
+						<button class="botaopedir" type="button">
+								Pedir Pizza
+						</button>
+				</div>
+            </div>
         </section>
 
-        <section>
-            <article id="sobrea">
-                <div class="sobrenos">
-                    <img src="./imgs/tela-inicial/pizzaiolo.png" alt="Imagem de um pizzaiolo" class="pizzaiolo">
-                    <div class="texto">
-                        <h2 class="subsobre">Sobre nós</h2>
-                        <p class="textonos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, amet
-                            aliquid.
-                            Aut tenetur repellendus sed corporis iusto laboriosam! Dolorem, beatae totam impedit
-                            deleniti sunt sequi saepe magnam accusantium blanditiis exercitationem!</p>
-                    </div>
-                </div>
-            </article>
+        <section id="sobre-nos">
+            <img src="./imgs/tela-inicial/pizzaiolo.png" alt="Imagem de um pizzaiolo" class="pizzaiolo">
+			<div class="texto-sobre-nos">
+				<h2 class="subsobre">Sobre nós</h2>
+				<p class="textonos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, amet
+					aliquid.
+					Aut tenetur repellendus sed corporis iusto laboriosam! Dolorem, beatae totam impedit
+					deleniti sunt sequi saepe magnam accusantium blanditiis exercitationem!
+				</p>
+			</div>
         </section>
 
-        <section>
-            <article id="cat">
-                <div class="categoria">
-                    <h2 class="carda">Nosso Cardápio</h2>
-                    <a href="#">
-                        <p class="tipos">Pizzas Salgadas➡️</p>
-                    </a>
-                    <a href="#">
-                        <img src="./imgs/tela-inicial/muzzarela.png" alt="Pizza Salgada" class="pizzas">
-                    </a>
-
-                    <div class="categoria">
-                        <a href="#">
-                            <p class="tipos">Pizzas Doces➡️</p>
-                        </a>
-                        <a href="">
-                            <img src="./imgs/tela-inicial/doce.png" alt="Pizza Doce" class="pizzas">
-                        </a>
-                    </div>
-
-                    <div class="categoria">
-                        <a href="#">
-                            <p class="tipos">Mini Pizzas➡️</p>
-                        </a>
-                        <a href="#">
-                            <img src="./imgs/tela-inicial/mini-pizza.png" alt="Mini Pizza" class="pizzas">
-                        </a>
-                    </div>
-
-                </div>
-            </article>
+        <section id="cardapio">
+			<h2 class="cardapio-titulo">Nosso Cardápio</h2>
+            <div class="categorias">
+				<div class="categoria">
+					<a href="#">
+						<p class="tipos">Pizzas Salgadas➡️</p>
+					</a>
+					<a href="#">
+						<img src="./imgs/tela-inicial/muzzarela.png" alt="Pizza Salgada" class="pizzas">
+					</a>
+				</div>
+				
+				<div class="categoria">
+					<a href="#">
+						<p class="tipos">Pizzas Doces➡️</p>
+					</a>
+					<a href="">
+						<img src="./imgs/tela-inicial/doce.png" alt="Pizza Doce" class="pizzas">
+					</a>
+				</div>
+	
+				<div class="categoria">
+					<a href="#">
+						<p class="tipos">Mini Pizzas➡️</p>
+					</a>
+					<a href="#">
+						<img src="./imgs/tela-inicial/mini-pizza.png" alt="Mini Pizza" class="pizzas">
+					</a>
+				</div>
+			</div>
         </section>
 
-        <section id="conato">
+        <section id="contato">
+			<h2 id="ct_local">Contato e Localização</h2>
             <article class="ct_local">
                 <div class="Contato">
-                    <h2 id="ct_local">Contato e Localização</h2>
                     <img src="./imgs/tela-inicial/whatsapp-logo.png" alt="Logo do WhatsApp" class="logos">
                     <p>WhatsApp</p>
                     <p>11 99887-6655</p>
                 </div>
 
                 <div>
-                    <img src="./imgs/tela-inicial/telefone-logo (1).png" alt="Logo de um telefone genérico"
-                        class="logos">
+                    <img src="./imgs/tela-inicial/telefone-logo (1).png" alt="Logo de um telefone genérico" class="logos">
                     <p class="contatos">Telefone</p>
                     <p class="contatos">3410-1239</p>
                 </div>
@@ -210,21 +202,21 @@
         <div id="footer-box">
             <nav id="navegacao_secundaria">
                 <div class="link-coluna">
-                    <a href="#sobrea">Sobre nós</a>
-                    <a href="./entrar-na-conta.html" target="_blank">Login</a>
+                    <a href="#">Sobre nós</a>
+                    <a href="#">Login</a>
                     <a href="#">Delivery</a>
                 </div>
                 <div class="link-coluna">
-                    <a href="#cat">Cardápio</a>
-                    <a href="#conato">Contato</a>
+                    <a href="#">Cardápio</a>
+                    <a href="#">Contato</a>
                     <a href="#">Reserva</a>
                 </div>
                 <div class="link-coluna">
                     <a href="#">Meus pedidos</a>
-                    <a href="#avaliacao">Avaliações</a>
+                    <a href="#">Avaliações</a>
                 </div>
             </nav>
-            <img src="./imgs/tela-inicial/pizaz.png" alt="Logo" id="footer-logo">
+            <img src="imgs/tela-inicial/pizaz.png" alt="Logo" id="footer-logo">
         </div>
         <p id="nextoria">© 2025 - Desenvolvido por <strong>Nextoria</strong></p>
     </footer>
