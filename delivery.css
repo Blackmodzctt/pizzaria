@@ -61,6 +61,7 @@ h2 {
 	padding: 12px;	
 	width: 500px;
 	display: flex;
+	gap: 12px;
 	justify-content: space-between;
 
 	background-color: white;
@@ -244,11 +245,42 @@ aside {
 	background-color: #d18719;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1400px) {
+	main {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: 'titulo titulo' 'aside aside' 'pizzas-salgadas pizzas-salgadas' 'pizzas-doces pizzas-doces';
+		column-gap: 0;
+	}
+
+	aside {
+		position: static;
+		margin-bottom: 2rem;
+	}
+
+	.pizzas {
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+	}
+
+	#pizzas-salgadas .pizza, #pizzas-doces .pizza {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
 	main {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto auto auto;
 		grid-template-areas: 'titulo' 'aside' 'pizzas-salgadas' 'pizzas-doces';
+		column-gap: 0;
+	}
+
+	.aberto {
+		padding: 4px 8px;
+		display: flex;
+		gap: 6px;
+		font-weight: bold;
 	}
 
 	aside {

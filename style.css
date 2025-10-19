@@ -36,9 +36,9 @@ header {
 }
 
 nav#navegacao_primaria {
-    display: flex;
-    justify-content: center;
-    gap: 2.5%;
+	display: flex;
+	justify-content: center;
+	gap: 2.5%;
 	font-optical-sizing: auto;
 }
 
@@ -61,6 +61,7 @@ footer {
 #footer-box {
     display: flex;
     justify-content: space-between;
+		gap: 16px;
 }
 
 #navegacao_secundaria {
@@ -87,4 +88,19 @@ footer {
 #nextoria {
     margin-top: 1rem;
     text-align: center;
+}
+
+@media (max-width: 500px) {
+	header {
+    height: fit-content;
+	}
+
+	nav#navegacao_primaria {
+		flex-wrap: wrap;
+	}
+
+	#footer-logo {
+    width: 100px;
+		height: 100px;
+}
 }
