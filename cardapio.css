@@ -1,36 +1,42 @@
 /* ---- MAIN ---- */
 main {
-    padding: 1.5rem;
+	padding: 1rem;
+	max-width: 400px;
+	margin: 0 auto;
 }
 
 h1 {
     text-align: center;
 }
 
-section {
-    width: 846px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-    margin-top: 2rem;
+h2 {
+	margin-bottom: 20px;
 }
 
-.pizzas-linha {
-    display: flex;
-    /* justify-content: center; */
-    gap: 3rem;
+section {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+	
+	
+.pizzas {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 3rem;
 }
 
 .pizza-container {
-    max-width: 250px;
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	width: 100%;
 }
 
 .pizza-container img {
-    width: 250px;
+    width: 100%;
+	max-width: 400px;
     height: 150px;
     object-fit: cover;
     object-position: center;
@@ -46,4 +52,42 @@ h3 {
 .pizza-descricao {
     font-size: 14px;
     color: #252525;
+}
+
+@media (min-width: 768px) {
+	main {
+		max-width: 1000px;
+	}
+
+	.pizza-container {
+		max-width: 600px;
+	}
+
+	.pizza-container img {
+		max-width: 600px;
+		height: 200px;
+	}
+
+	.pizzas {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+}
+
+@media (min-width: 1024px) {	
+	.pizza-container {
+		max-width: 300px;
+	}
+
+	.pizza-container img {
+		max-width: 300px;
+		height: 150px;
+	}
+
+	.pizzas {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2rem;
+	}
 }

@@ -1,9 +1,11 @@
+main {
+	padding: 30px;
+}
+
 .bloco-contato {
     background-color: white;
     margin-top: 10px;
-    padding: 30px;
     width: 100%;
-    height: 40vh;
 }
 
 .whatsapp1 {
@@ -30,28 +32,23 @@
     margin-left: 5px;
 }
 
-#subtitulo {
+h2 {
     text-align: center;
+	margin-bottom: 24px;
 }
 
 .logos {
     height: 40px;
-    margin-left: 50px;
 }
 
 /*============CONFIGURAÇÕES DA TABELA============*/
 
-.subsub {
-    margin-top: 40px;
-    margin-left: 23%;
-}
-
 .tabela-principal {
-    width: 800px;
+    width: 100%;
+	max-width: 800px;
     border-collapse: collapse;
     text-align: center;
     height: 200px;
-    margin-left: 23%;
 }
 
 .parte-branca {
@@ -83,61 +80,23 @@ tbody td {
   }
 
   /*============PARTE DA LOCALIZAÇÃO============*/
-
-  .locali {
-    text-align: center;
-    margin-top: 100px;
-  }
-
-  .img {
-    margin-left: 23%;
-  }
-
-  .cep {
-    margin-top: 30px;
-    text-align: center;
-  }
-
-  #anchor-maps {
-    color: #000;
-  }
-
-  /*=============RODAPÉ============*/
-footer {
-    background-color: #efcd8f;
-    padding: 1.5rem;
-    
+article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
 }
 
-#footer-box {
-    display: flex;
-    justify-content: space-between;
+.img {
+	width: 100%;
+	max-width: 700px;
 }
 
-#navegacao_secundaria {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    width: 300px;   
+.cep {
+	margin-top: 30px;
+	text-align: center;
 }
 
-.link-coluna {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+#anchor-maps {
+	color: #000;
 }
-
-.link-coluna a {
-    color: black;
-}
-
-#footer-logo {
-    width: 180px;
-}
-
-#nextoria {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-  

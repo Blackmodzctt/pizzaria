@@ -5,17 +5,20 @@ main {
     justify-content: center;
     gap: 8%;
     padding: 1.5rem;
+		max-width: 1200px;
+		margin: 0 auto;
 }
 
 /* ---- SECTION COM FORM ---- */
 section {
+		width: 100%;
+		max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
 form {
-    min-width: 400px;
     display: flex;
     flex-direction: column;
 
@@ -74,4 +77,31 @@ input {
 /* ---- IMAGEM DE LOGO ---- */
 #imagem-logo {
     width: 400px;
+}
+
+@media (max-width: 1024px) {
+	#imagem-logo {
+    width: 250px;
+		height: fit-content;
+		align-self: center;
+	}
+}
+
+@media (max-width: 768px) {
+	main {
+		flex-direction: column;
+		max-width: 600px;
+		margin: 0 auto;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	form {
+		width: 100%;
+		max-width: 400px;
+	}
+
+	#imagem-logo {
+    width: 250px;
+	}
 }

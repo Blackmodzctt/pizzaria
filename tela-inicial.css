@@ -1,6 +1,6 @@
 /* cor de fundo */
 body {
-    background-color: #d18719;
+    background-color: white;
 }
 
 /*
@@ -18,34 +18,35 @@ body {
 } */
 
 /*alterações dos anchor*/
-a {
+/* a {
     color: white;
     margin-right: 12px;
-}
+} */
 
 /*personalização do menu de navegação*/
 .naveg {
     text-align: center;
     font-family: "Arimo", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400px;
+    font-weight: 400;
     font-style: normal;
     font-size: 21px;
 }
 
 /*tirei a sublinha do anchor*/
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
 /*coloquei uma cor preta no hover do anchor*/
-a:hover {
+/* a:hover {
     color: rgb(0, 0, 0);
     text-decoration: underline;
-}
+} */
 
 
 #inicial {
+	padding-top: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -62,12 +63,12 @@ a:hover {
 
 /*bloco branco em baixo da pizza*/
 .blocobranco {
-		display: flex;
-		gap: 2rem;
+	display: flex;
+	gap: 2rem;
     background-color: white;
-		height: 500px;
-		width: 1000px;
-		margin-left: 300px;
+	height: 500px;
+	width: 1000px;
+	margin-left: 300px;
 }
 
 #cabecalho-informacao {
@@ -96,6 +97,9 @@ a:hover {
 		cursor: pointer;
 		margin-top: 150px;
 		font-size: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 }
 
 /*animação do hover*/
@@ -162,6 +166,10 @@ a:hover {
 		gap: 10px;
 }
 
+.categoria a {
+	color: white;
+}
+
 /*Bloco dos tipos de pizza*/
 .pizzas {
     width: 350px;
@@ -181,14 +189,25 @@ a:hover {
 }
 
 #contato {
-	padding: 100px;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 40px;
 	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto auto;
+	grid-template-areas: 'local mapa' 'horario mapa';
 }
 
 /*fundo da seção de localização*/
 .ct_local {
+	grid-area: local;
     background-color: white;
     padding: 20px;
+}
+
+.ct_horario {
+	grid-area: horario;
 }
 
 /*imagem das logos*/
@@ -234,24 +253,34 @@ tr.destaque {
 
 /*imagem do google maps*/
 .localização {
-    margin-left: 450px;
-    margin-top: -700px;
-    width: 600px;
-    height: 500px;
+	grid-area: mapa;
+    width: 100%;
+	max-width: 600px;
+    height: auto;
 }
 
 #avaliacoes {
+	background-color: #d18719;
     padding: 50px;
 }
 
 #avaliacoes-titulo {
     color: white;
     margin-bottom: 1rem;
+	justify-self: center;
+	align-self: center;
 }
 
+#avaliacoes-titulo a {
+	text-decoration: underline;
+	font-size: 1rem;
+	color: white;
+}
 
 /*Caixa que contém as avaliações*/
 .avaliacoes {
+	max-width: 1200px;
+	margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -268,15 +297,24 @@ tr.destaque {
     row-gap: 4px;
 
     background-color: white;
-    width: 360px;
+    width: 100%;
     border-radius: 7px;
-    height: 100px;
+    height: 125px;
     padding: 8px;
 }
 
 /*Imagem dos clientes*/
 .img-pessoa {
+		height: 50px;
     width: 50px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+
     border-radius: 50%;
     grid-row-start: 1;
     grid-row-end: 3;
@@ -290,4 +328,190 @@ tr.destaque {
 .avaliacao-nome {
     font-size: 14px;
     color: #333;
+}
+
+
+@media (max-width: 1440px) {
+	body {
+		background-color: white;
+	}
+
+	/*configurações da imagem de pizza do início*/
+	.pizz {
+		height: 300px;
+		width: 300px; 
+		margin-left: -150px;
+		margin-top: 0;
+	}
+
+	/*bloco branco em baixo da pizza*/
+	.blocobranco {
+		gap: 2rem;
+		justify-content: center;
+		align-items: center;
+		height: fit-content;
+		width: fit-content;
+		padding: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 20px;
+	}
+
+
+	/*configuração de tamanho do slogan*/
+	.slogan {
+		max-width: 500px;
+	}
+
+	/* ------- AVALIAÇÕES -------- */
+
+	#avaliacoes {
+		padding: 20px;
+	}
+
+	/*Caixa que contém as avaliações*/
+	.avaliacoes {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(8, auto);             
+	}
+
+
+	/*caixa de cada avaliação*/
+	.avaliacao {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px) {
+	/*configurações da imagem de pizza do início*/
+	.pizz {
+			height: 300px;
+			width: 300px; 
+			margin-left: 0;
+			margin-top: -150px;
+	}
+
+	/*bloco branco em baixo da pizza*/
+	.blocobranco {
+			flex-direction: column;
+			gap: 2rem;
+			justify-content: center;
+			align-items: center;
+			height: fit-content;
+			width: fit-content;
+			padding: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 150px;
+	}
+
+	#cabecalho-informacao {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+
+	/*configuração de tamanho do slogan*/
+	.slogan {
+		max-width: fit-content;
+	}
+
+	/*personalização do botão de pedir*/
+	.botaopedir{
+			height: 90px;
+			width: 100%;
+			align-self: stretch;
+			margin-top: 20px;
+	}
+
+	/* --------- SOBRE NÓS --------- */
+	/*personalização do sobre nós*/
+	#sobre-nos {
+			padding: 30px;
+			flex-direction: column;
+			gap: 2rem;
+	}
+
+	/*imagem do pizzaiolo que fica do lado do sobre nós */
+	.pizzaiolo {
+			width: 300px;
+			max-width: 100%;
+			height: auto;
+	}
+
+	/*personalização de tamanho do texto e margem sobre nós*/
+	.texto-sobre-nos {
+			max-width: 500px;
+	}
+
+	/*personalização do título sobre nós*/
+	.subsobre {
+			font-size: 24px;
+	}
+
+	/*personalização do texto sobre nós*/
+	.textonos {
+			font-size: 18px;
+	}
+
+	/*---------- Cardápio ---------- */
+	#cardapio {
+		padding-block: 30px;
+		padding-inline: 20px;
+		gap: 30px;
+	}
+
+	/*Alterei o tamanho do título cardápio*/
+	.cardapio-titulo {
+			font-size: 42px;
+	}
+
+	.categorias {
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	/* --------- CONTATO E LOCALIZAÇÃO --------- */
+	#contato {
+		padding: 20px;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: 'local' 'horario' 'mapa';
+	}
+
+	/* Estilo da tabela */
+	table {
+		width: 100%;
+	}
+
+	/*imagem do google maps*/
+	.localização {
+		margin-left: 0;
+		margin-top: 32px;
+		/* width: 100%; */
+		height: auto;
+		justify-self: center;
+	}
+
+	/* ----------- AVALIAÇÕES ------------ */
+	#avaliacoes {
+		padding: 20px;
+	}
+
+	/*Caixa que contém as avaliações*/
+	.avaliacoes {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(8, auto);             
+	}
+
+
+	/*caixa de cada avaliação*/
+	.avaliacao {
+		width: 100%;
+	}
 }

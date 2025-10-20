@@ -83,6 +83,7 @@ footer {
 
 #footer-logo {
     width: 150px;
+		height: 150px;
 }
 
 #nextoria {
@@ -90,7 +91,7 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 	header {
     height: fit-content;
 	}
