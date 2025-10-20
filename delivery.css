@@ -1,0 +1,299 @@
+main {
+	padding: 1.5rem;
+	background-color: rgb(239, 239, 239);
+
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto auto auto 1fr;
+
+	grid-template-areas: 'titulo titulo' 'pizzas-salgadas aside' 'pizzas-doces aside' '. aside';
+
+	column-gap: 32px;
+}
+
+.container-titulo-aberto {
+	grid-area: titulo;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.aberto {
+	padding: .5rem 1rem;
+	background-color: greenyellow;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: bold;
+	color: green;
+}
+
+.aberto .circulo {
+	height: 12px;
+	width: 12px;
+	background-color: green;
+	border-radius: 50%;
+}
+
+section#pizzas-salgadas {
+	grid-area: pizzas-salgadas;
+	margin-bottom: 40px;
+}
+
+section#pizzas-doces {
+	grid-area: pizzas-doces;
+}
+
+h2 {
+	margin-bottom: 1rem;
+}
+
+.pizzas {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: fit-content;
+	gap: 1.5rem;
+}
+
+#pizzas-salgadas .pizza, #pizzas-doces .pizza {
+	padding: 12px;	
+	width: 500px;
+	display: flex;
+	gap: 12px;
+	justify-content: space-between;
+
+	background-color: white;
+
+	border: 1px solid #d6d6d6;
+	border-radius: 7px;
+	cursor: pointer;
+
+	transition: box-shadow .1s ease;
+}
+
+.pizza:hover {
+	box-shadow: 1px 4px 4px rgba(126, 126, 126, 0.2);
+}
+
+.pizza-informacao {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 1fr;
+	gap: 8px;
+}
+
+#pizzas-salgadas .pizza .nome, #pizzas-doces .pizza .nome {
+	color: #222;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#pizzas-salgadas .pizza .ingredientes, #pizzas-doces .pizza .ingredientes {
+	color: #333;
+}
+
+#pizzas-salgadas .pizza .preco, #pizzas-doces .pizza .preco {
+	font-size: 18px;
+	color: #111;
+}
+
+#pizzas-salgadas .pizza img, #pizzas-doces .pizza img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 7px;
+}
+
+
+aside {
+	width: 100%;
+	max-width: 400px;
+	justify-self: center;
+	grid-area: aside;
+	height: fit-content;
+	box-shadow: 0 2px 5px rgba(82, 82, 82, 0.3);
+	border-radius: 7px;
+	overflow: hidden;
+	position: sticky;
+	top: 20px;
+}
+
+.botao-taxa {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	gap: 16px;
+	background-color: white;
+	padding: 16px;
+
+	cursor: pointer;
+}
+
+.mapa-icone {
+	color: rgb(83, 83, 83);
+}
+
+.seta-icone {
+	color: #d18719;
+}
+
+.botao-taxa p {
+	font-size: 14px;
+	color: #333;
+}
+
+.sacola-texto {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+	background-color: white;
+	border-top: 1px solid #b1b1b1;
+	border-bottom: 1px solid #b1b1b1;
+	font-size: 14px;
+}
+
+.sacola-texto button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.pizza-selecionada {
+	padding: 10px;
+	margin: 10px;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto 1fr;
+	row-gap: 8px;
+	border-radius: 7px;
+	border: 1px solid #bdbdbd;
+}
+
+.pizza-selecionada p {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	gap: 5px;
+}
+
+.pizza-selecionada p span {
+	color: #333;
+}
+
+.pizza-selecionada img {
+	width: 50px;
+	height: 50px;
+	border-radius: 7px;
+	grid-column-start: 2;
+	object-fit: cover;
+}
+
+.pizza-selecionada .botoes-container {
+	align-self: flex-end;
+	display: flex;
+	gap: 12px;
+} 
+
+.pizza-selecionada .botoes-container button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.botao-editar {
+	color: #d18719;
+}
+
+.botao-remover {
+	color: #33333397;
+}
+
+#total {
+	border-top: 1px solid #b1b1b1;
+	background-color: white;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+#total p {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	color: #5d5d5d;
+}
+
+#total p.valor-total {
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+}
+
+#continuar-pedido-botao {
+	width: 100%;
+	border: none;
+	text-align: center;
+	padding: 16px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background-color: #d18719;
+}
+
+@media (max-width: 1400px) {
+	main {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: 'titulo titulo' 'aside aside' 'pizzas-salgadas pizzas-salgadas' 'pizzas-doces pizzas-doces';
+		column-gap: 0;
+	}
+
+	aside {
+		position: static;
+		margin-bottom: 2rem;
+	}
+
+	.pizzas {
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+	}
+
+	#pizzas-salgadas .pizza, #pizzas-doces .pizza {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	main {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: 'titulo' 'aside' 'pizzas-salgadas' 'pizzas-doces';
+		column-gap: 0;
+	}
+
+	.aberto {
+		padding: 4px 8px;
+		display: flex;
+		gap: 6px;
+		font-weight: bold;
+	}
+
+	aside {
+		position: static;
+		margin-bottom: 2rem;
+	}
+
+	.pizzas {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	#pizzas-salgadas .pizza, #pizzas-doces .pizza {
+		width: 100%;
+	}
+}

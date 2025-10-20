@@ -36,9 +36,9 @@ header {
 }
 
 nav#navegacao_primaria {
-    display: flex;
-    justify-content: center;
-    gap: 2.5%;
+	display: flex;
+	justify-content: center;
+	gap: 2.5%;
 	font-optical-sizing: auto;
 }
 
@@ -56,12 +56,12 @@ nav#navegacao_primaria a:hover {
 footer {
     background-color: #efcd8f;
     padding: 1.5rem;
-    margin-top: 32px;
 }
 
 #footer-box {
     display: flex;
     justify-content: space-between;
+		gap: 16px;
 }
 
 #navegacao_secundaria {
@@ -83,9 +83,25 @@ footer {
 
 #footer-logo {
     width: 150px;
+		height: 150px;
 }
 
 #nextoria {
     margin-top: 1rem;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+	header {
+    height: fit-content;
+	}
+
+	nav#navegacao_primaria {
+		flex-wrap: wrap;
+	}
+
+	#footer-logo {
+    width: 100px;
+		height: 100px;
+}
 }
