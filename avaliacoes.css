@@ -135,3 +135,80 @@ progress::-webkit-progress-value {
 	margin-top: 1rem;
 	color: #333;
 }
+
+/* RESPONSIVIDADE */
+/* ========================= */
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+	main {
+		padding: 1rem;
+	}
+
+	h3 {
+		font-size: 1.4rem;
+	}
+
+	.media-avaliacoes-pontuacao {
+		font-size: 3rem;
+	}
+
+	.nota {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.comentario-informacao {
+		grid-template-columns: 40px 1fr;
+		grid-template-rows: auto;
+		row-gap: 0.5rem;
+		height: auto;
+	}
+
+	.foto-perfil {
+		width: 40px;
+		height: 40px;
+		font-size: 1rem;
+	}
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 480px) {
+	main {
+		padding: 0.75rem;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	.media-avaliacoes-pontuacao {
+		font-size: 2.5rem;
+	}
+
+	.media-avaliacoes-texto {
+		font-size: 1rem;
+	}
+
+	.nota-ranking {
+		font-size: 16px;
+	}
+
+	.comentario {
+		padding: 0.75rem;
+	}
+
+	.comentario-texto {
+		font-size: 0.9rem;
+	}
+
+	progress {
+		height: 10px;
+	}
+
+	#comentarios h2 {
+		text-align: center;
+		font-size: 1.3rem;
+	}
+}

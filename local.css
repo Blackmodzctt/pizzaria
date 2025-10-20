@@ -100,3 +100,77 @@ article {
 #anchor-maps {
 	color: #000;
 }
+
+/* Tablets */
+@media (max-width: 768px) {
+	main {
+		padding: 20px;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	.whatsapp1,
+	.instagram1,
+	.telefone1 {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.coluna {
+		margin-left: 0;
+		margin-top: 8px;
+	}
+
+	.tabela-principal {
+		font-size: 0.95rem;
+		max-width: 100%;
+	}
+
+	.img {
+		max-width: 500px;
+	}
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+	main {
+		padding: 15px;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+	}
+
+	.logos {
+		height: 32px;
+		width: 32px;
+	}
+
+	.coluna {
+		font-size: 0.95rem;
+	}
+
+	.tabela-principal {
+		font-size: 0.8rem;
+		display: block;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+
+	.tabela-principal th,
+	.tabela-principal td {
+		padding: 6px;
+	}
+
+	.img {
+		max-width: 100%;
+	}
+
+	.cep {
+		font-size: 0.9rem;
+	}
+}
